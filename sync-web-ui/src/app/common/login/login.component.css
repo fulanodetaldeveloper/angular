@@ -1,0 +1,60 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.login-card {
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+}
+
+.tool-bar {
+    background-color: var(--mat-sys-secondary);
+    color: var(--mat-sys-on-secondary);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* O la altura que desees */
+  background-color: #f0f2f5; /* Color de fondo similar a Windows 11 */
+}
+
+.login-card {
+  width: 400px; /* Ajusta el ancho según sea necesario */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #ffffff; /* Fondo blanco */
+}

@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <span class="app-title">Mi Aplicación</span>
+
+    <span class="spacer"></span>
+
+
+    <button mat-button routerLink="/login">
+        <mat-icon>login</mat-icon>
+        Acceso
+    </button>
+
+
+    <ng-template #loggedInButtons>
+        <button mat-button>
+            <mat-icon>logout</mat-icon>
+            Cerrar Sesión
+        </button>
+    </ng-template>
+</mat-toolbar>

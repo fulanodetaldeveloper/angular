@@ -1,0 +1,306 @@
+/* Windows 11 Theme for Angular Material 17 */
+/* Based on Windows 11 Fluent Design System colors and principles */
+
+html {
+  /* Primary Colors - Windows 11 Blue Accent */
+  --mat-sys-primary: #0078d4;
+  --mat-sys-on-primary: #ffffff;
+  --mat-sys-primary-container: #cfe4ff;
+  --mat-sys-on-primary-container: #001d33;
+  --mat-sys-primary-fixed: #cfe4ff;
+  --mat-sys-primary-fixed-dim: #9ecaff;
+  --mat-sys-on-primary-fixed: #001d33;
+  --mat-sys-on-primary-fixed-variant: #004c87;
+
+  /* Secondary Colors - Windows 11 Neutral Gray */
+  --mat-sys-secondary: #5f6368;
+  --mat-sys-on-secondary: #ffffff;
+  --mat-sys-secondary-container: #e3e5e8;
+  --mat-sys-on-secondary-container: #1c1f23;
+  --mat-sys-secondary-fixed: #e3e5e8;
+  --mat-sys-secondary-fixed-dim: #c7cacd;
+  --mat-sys-on-secondary-fixed: #1c1f23;
+  --mat-sys-on-secondary-fixed-variant: #474a4e;
+
+  /* Tertiary Colors - Windows 11 Purple Accent */
+  --mat-sys-tertiary: #8764b8;
+  --mat-sys-on-tertiary: #ffffff;
+  --mat-sys-tertiary-container: #f0e6ff;
+  --mat-sys-on-tertiary-container: #2d1b69;
+  --mat-sys-tertiary-fixed: #f0e6ff;
+  --mat-sys-tertiary-fixed-dim: #d1bbff;
+  --mat-sys-on-tertiary-fixed: #2d1b69;
+  --mat-sys-on-tertiary-fixed-variant: #6c4c9c;
+
+  /* Error Colors */
+  --mat-sys-error: #c42c1c;
+  --mat-sys-on-error: #ffffff;
+  --mat-sys-error-container: #ffd6d1;
+  --mat-sys-on-error-container: #410e0b;
+
+  /* Surface Colors - Windows 11 Light Theme */
+  --mat-sys-surface: #fafafa;
+  --mat-sys-on-surface: #1c1c1c;
+  --mat-sys-surface-variant: #f3f3f3;
+  --mat-sys-on-surface-variant: #49454f;
+  --mat-sys-surface-container-lowest: #ffffff;
+  --mat-sys-surface-container-low: #f7f7f7;
+  --mat-sys-surface-container: #f1f1f1;
+  --mat-sys-surface-container-high: #ebebeb;
+  --mat-sys-surface-container-highest: #e5e5e5;
+  --mat-sys-surface-dim: #dddcdd;
+  --mat-sys-surface-bright: #fafafa;
+  --mat-sys-surface-tint: #0078d4;
+
+  /* Background Colors */
+  --mat-sys-background: #fafafa;
+  --mat-sys-on-background: #1c1c1c;
+
+  /* Outline Colors */
+  --mat-sys-outline: #79747e;
+  --mat-sys-outline-variant: #cac4d0;
+
+  /* Inverse Colors */
+  --mat-sys-inverse-surface: #313033;
+  --mat-sys-inverse-on-surface: #f4eff4;
+  --mat-sys-inverse-primary: #9ecaff;
+
+  /* Shadow and Scrim */
+  --mat-sys-shadow: #000000;
+  --mat-sys-scrim: #000000;
+
+  /* Neutral Variants for Windows 11 styling */
+  --mat-sys-neutral-variant20: #323539;
+  --mat-sys-neutral10: #1c1c1c;
+}
+
+/* Windows 11 Elevation Shadows - More subtle and modern */
+html {
+  --mat-sys-level0: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  --mat-sys-level1: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  --mat-sys-level2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  --mat-sys-level3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  --mat-sys-level4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  --mat-sys-level5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography - Segoe UI for Windows 11 feel */
+html {
+  --mat-sys-body-large: 400 1rem / 1.5rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-large-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-large-line-height: 1.5rem;
+  --mat-sys-body-large-size: 1rem;
+  --mat-sys-body-large-tracking: 0.031rem;
+  --mat-sys-body-large-weight: 400;
+  
+  --mat-sys-body-medium: 400 0.875rem / 1.25rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-medium-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-medium-line-height: 1.25rem;
+  --mat-sys-body-medium-size: 0.875rem;
+  --mat-sys-body-medium-tracking: 0.016rem;
+  --mat-sys-body-medium-weight: 400;
+  
+  --mat-sys-body-small: 400 0.75rem / 1rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-small-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-body-small-line-height: 1rem;
+  --mat-sys-body-small-size: 0.75rem;
+  --mat-sys-body-small-tracking: 0.025rem;
+  --mat-sys-body-small-weight: 400;
+
+  --mat-sys-display-large: 600 3.562rem / 4rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-large-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-large-line-height: 4rem;
+  --mat-sys-display-large-size: 3.562rem;
+  --mat-sys-display-large-tracking: -0.016rem;
+  --mat-sys-display-large-weight: 600;
+  
+  --mat-sys-display-medium: 600 2.812rem / 3.25rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-medium-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-medium-line-height: 3.25rem;
+  --mat-sys-display-medium-size: 2.812rem;
+  --mat-sys-display-medium-tracking: 0;
+  --mat-sys-display-medium-weight: 600;
+  
+  --mat-sys-display-small: 600 2.25rem / 2.75rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-small-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-display-small-line-height: 2.75rem;
+  --mat-sys-display-small-size: 2.25rem;
+  --mat-sys-display-small-tracking: 0;
+  --mat-sys-display-small-weight: 600;
+
+  --mat-sys-headline-large: 400 2rem / 2.5rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-large-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-large-line-height: 2.5rem;
+  --mat-sys-headline-large-size: 2rem;
+  --mat-sys-headline-large-tracking: 0;
+  --mat-sys-headline-large-weight: 400;
+  
+  --mat-sys-headline-medium: 400 1.75rem / 2.25rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-medium-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-medium-line-height: 2.25rem;
+  --mat-sys-headline-medium-size: 1.75rem;
+  --mat-sys-headline-medium-tracking: 0;
+  --mat-sys-headline-medium-weight: 400;
+  
+  --mat-sys-headline-small: 400 1.5rem / 2rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-small-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-headline-small-line-height: 2rem;
+  --mat-sys-headline-small-size: 1.5rem;
+  --mat-sys-headline-small-tracking: 0;
+  --mat-sys-headline-small-weight: 400;
+
+  --mat-sys-label-large: 600 0.875rem / 1.25rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-large-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-large-line-height: 1.25rem;
+  --mat-sys-label-large-size: 0.875rem;
+  --mat-sys-label-large-tracking: 0.006rem;
+  --mat-sys-label-large-weight: 600;
+  --mat-sys-label-large-weight-prominent: 700;
+  
+  --mat-sys-label-medium: 600 0.75rem / 1rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-medium-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-medium-line-height: 1rem;
+  --mat-sys-label-medium-size: 0.75rem;
+  --mat-sys-label-medium-tracking: 0.031rem;
+  --mat-sys-label-medium-weight: 600;
+  --mat-sys-label-medium-weight-prominent: 700;
+  
+  --mat-sys-label-small: 600 0.688rem / 1rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-small-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-label-small-line-height: 1rem;
+  --mat-sys-label-small-size: 0.688rem;
+  --mat-sys-label-small-tracking: 0.031rem;
+  --mat-sys-label-small-weight: 600;
+
+  --mat-sys-title-large: 400 1.375rem / 1.75rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-large-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-large-line-height: 1.75rem;
+  --mat-sys-title-large-size: 1.375rem;
+  --mat-sys-title-large-tracking: 0;
+  --mat-sys-title-large-weight: 400;
+  
+  --mat-sys-title-medium: 600 1rem / 1.5rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-medium-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-medium-line-height: 1.5rem;
+  --mat-sys-title-medium-size: 1rem;
+  --mat-sys-title-medium-tracking: 0.009rem;
+  --mat-sys-title-medium-weight: 600;
+  
+  --mat-sys-title-small: 600 0.875rem / 1.25rem 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-small-font: 'Segoe UI', Roboto, sans-serif;
+  --mat-sys-title-small-line-height: 1.25rem;
+  --mat-sys-title-small-size: 0.875rem;
+  --mat-sys-title-small-tracking: 0.006rem;
+  --mat-sys-title-small-weight: 600;
+}
+
+/* Corner Radius - Windows 11 uses more subtle rounded corners */
+html {
+  --mat-sys-corner-extra-large: 16px;
+  --mat-sys-corner-extra-large-top: 16px 16px 0 0;
+  --mat-sys-corner-extra-small: 4px;
+  --mat-sys-corner-extra-small-top: 4px 4px 0 0;
+  --mat-sys-corner-full: 9999px;
+  --mat-sys-corner-large: 8px;
+  --mat-sys-corner-large-end: 0 8px 8px 0;
+  --mat-sys-corner-large-start: 8px 0 0 8px;
+  --mat-sys-corner-large-top: 8px 8px 0 0;
+  --mat-sys-corner-medium: 6px;
+  --mat-sys-corner-none: 0;
+  --mat-sys-corner-small: 4px;
+}
+
+/* State Layer Opacity - Windows 11 subtle interactions */
+html {
+  --mat-sys-dragged-state-layer-opacity: 0.12;
+  --mat-sys-focus-state-layer-opacity: 0.10;
+  --mat-sys-hover-state-layer-opacity: 0.06;
+  --mat-sys-pressed-state-layer-opacity: 0.10;
+}
+
+/* Windows 11 Dark Theme Variant */
+@media (prefers-color-scheme: dark) {
+  html {
+    /* Primary Colors - Windows 11 Blue Accent (Dark) */
+    --mat-sys-primary: #60cdff;
+    --mat-sys-on-primary: #003258;
+    --mat-sys-primary-container: #004c87;
+    --mat-sys-on-primary-container: #cfe4ff;
+
+    /* Secondary Colors - Windows 11 Neutral Gray (Dark) */
+    --mat-sys-secondary: #c7cacd;
+    --mat-sys-on-secondary: #313438;
+    --mat-sys-secondary-container: #474a4e;
+    --mat-sys-on-secondary-container: #e3e5e8;
+
+    /* Tertiary Colors - Windows 11 Purple Accent (Dark) */
+    --mat-sys-tertiary: #d1bbff;
+    --mat-sys-on-tertiary: #432c80;
+    --mat-sys-tertiary-container: #6c4c9c;
+    --mat-sys-on-tertiary-container: #f0e6ff;
+
+    /* Error Colors (Dark) */
+    --mat-sys-error: #ffb4ab;
+    --mat-sys-on-error: #690005;
+    --mat-sys-error-container: #93000a;
+    --mat-sys-on-error-container: #ffd6d1;
+
+    /* Surface Colors - Windows 11 Dark Theme */
+    --mat-sys-surface: #1c1c1c;
+    --mat-sys-on-surface: #e6e1e5;
+    --mat-sys-surface-variant: #2c2c2c;
+    --mat-sys-on-surface-variant: #cac4d0;
+    --mat-sys-surface-container-lowest: #0f0f0f;
+    --mat-sys-surface-container-low: #1a1a1a;
+    --mat-sys-surface-container: #1e1e1e;
+    --mat-sys-surface-container-high: #292929;
+    --mat-sys-surface-container-highest: #343434;
+    --mat-sys-surface-dim: #141318;
+    --mat-sys-surface-bright: #3b383e;
+    --mat-sys-surface-tint: #60cdff;
+
+    /* Background Colors (Dark) */
+    --mat-sys-background: #1c1c1c;
+    --mat-sys-on-background: #e6e1e5;
+
+    /* Outline Colors (Dark) */
+    --mat-sys-outline: #938f99;
+    --mat-sys-outline-variant: #49454f;
+
+    /* Inverse Colors (Dark) */
+    --mat-sys-inverse-surface: #e6e1e5;
+    --mat-sys-inverse-on-surface: #313033;
+    --mat-sys-inverse-primary: #0078d4;
+
+    /* Neutral Variants for Windows 11 dark styling */
+    --mat-sys-neutral-variant20: #323539;
+    --mat-sys-neutral10: #1c1c1c;
+  }
+}
+
+/* Additional Windows 11 specific enhancements */
+.mat-elevation-z1,
+.mat-card,
+.mat-dialog-container {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+/* Windows 11 Acrylic effect for elevated surfaces */
+.mat-elevation-z2,
+.mat-elevation-z3,
+.mat-elevation-z4,
+.mat-elevation-z5 {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  .mat-elevation-z2,
+  .mat-elevation-z3,
+  .mat-elevation-z4,
+  .mat-elevation-z5 {
+    background-color: rgba(44, 44, 44, 0.85);
+  }
+}
