@@ -1,0 +1,405 @@
+/* Windows Vista Aero Theme for Angular Material 17 */
+/* Based on Windows Vista Aero Glass design system with translucent effects */
+
+html {
+  /* Primary Colors - Windows Vista Blue (Aero Blue) */
+  --mat-sys-primary: #316ac5;
+  --mat-sys-on-primary: #ffffff;
+  --mat-sys-primary-container: #d4e7ff;
+  --mat-sys-on-primary-container: #001a41;
+  --mat-sys-primary-fixed: #d4e7ff;
+  --mat-sys-primary-fixed-dim: #a6d3ff;
+  --mat-sys-on-primary-fixed: #001a41;
+  --mat-sys-on-primary-fixed-variant: #1e4d7a;
+
+  /* Secondary Colors - Windows Vista Silver/Gray */
+  --mat-sys-secondary: #4a5568;
+  --mat-sys-on-secondary: #ffffff;
+  --mat-sys-secondary-container: #d8dde6;
+  --mat-sys-on-secondary-container: #0a1219;
+  --mat-sys-secondary-fixed: #d8dde6;
+  --mat-sys-secondary-fixed-dim: #bcc7d2;
+  --mat-sys-on-secondary-fixed: #0a1219;
+  --mat-sys-on-secondary-fixed-variant: #2d3748;
+
+  /* Tertiary Colors - Windows Vista Green Accent */
+  --mat-sys-tertiary: #4a8b3b;
+  --mat-sys-on-tertiary: #ffffff;
+  --mat-sys-tertiary-container: #c8f0bb;
+  --mat-sys-on-tertiary-container: #0a2106;
+  --mat-sys-tertiary-fixed: #c8f0bb;
+  --mat-sys-tertiary-fixed-dim: #a8d69a;
+  --mat-sys-on-tertiary-fixed: #0a2106;
+  --mat-sys-on-tertiary-fixed-variant: #2e6b25;
+
+  /* Error Colors - Windows Vista Red */
+  --mat-sys-error: #d32f2f;
+  --mat-sys-on-error: #ffffff;
+  --mat-sys-error-container: #ffcdd2;
+  --mat-sys-on-error-container: #5f0a0a;
+
+  /* Surface Colors - Windows Vista Aero Glass Effect */
+  --mat-sys-surface: #f8f9fb;
+  --mat-sys-on-surface: #1a1c1e;
+  --mat-sys-surface-variant: #e8eaf2;
+  --mat-sys-on-surface-variant: #44474e;
+  --mat-sys-surface-container-lowest: #ffffff;
+  --mat-sys-surface-container-low: #f2f4f8;
+  --mat-sys-surface-container: #eceff4;
+  --mat-sys-surface-container-high: #e6e9ef;
+  --mat-sys-surface-container-highest: #e0e4ea;
+  --mat-sys-surface-dim: #d9dce1;
+  --mat-sys-surface-bright: #f8f9fb;
+  --mat-sys-surface-tint: #316ac5;
+
+  /* Background Colors - Vista gradient background */
+  --mat-sys-background: linear-gradient(135deg, #b8d4f0 0%, #e8f4fd 50%, #f8fcff 100%);
+  --mat-sys-on-background: #1a1c1e;
+
+  /* Outline Colors */
+  --mat-sys-outline: #74777f;
+  --mat-sys-outline-variant: #c4c7cf;
+
+  /* Inverse Colors */
+  --mat-sys-inverse-surface: #2f3033;
+  --mat-sys-inverse-on-surface: #f1f0f4;
+  --mat-sys-inverse-primary: #a6d3ff;
+
+  /* Shadow and Scrim */
+  --mat-sys-shadow: #000000;
+  --mat-sys-scrim: #000000;
+
+  /* Neutral Variants for Vista styling */
+  --mat-sys-neutral-variant20: #2d3038;
+  --mat-sys-neutral10: #1a1c1e;
+
+  /* Vista specific color additions */
+  --vista-glass-blue: rgba(173, 216, 230, 0.3);
+  --vista-glass-white: rgba(255, 255, 255, 0.7);
+  --vista-border-shine: rgba(255, 255, 255, 0.8);
+  --vista-border-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Windows Vista Aero Glass Elevation Shadows - More dramatic and glowing */
+html {
+  --mat-sys-level0: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  --mat-sys-level1: 
+    0px 2px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(49, 106, 197, 0.12),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+  --mat-sys-level2: 
+    0px 4px 8px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 16px 0px rgba(49, 106, 197, 0.15),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  --mat-sys-level3: 
+    0px 6px 12px 0px rgba(0, 0, 0, 0.18),
+    0px 4px 20px 0px rgba(49, 106, 197, 0.18),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+  --mat-sys-level4: 
+    0px 8px 16px 0px rgba(0, 0, 0, 0.20),
+    0px 6px 24px 0px rgba(49, 106, 197, 0.20),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.7);
+  --mat-sys-level5: 
+    0px 12px 20px 0px rgba(0, 0, 0, 0.22),
+    0px 8px 28px 0px rgba(49, 106, 197, 0.25),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+/* Typography - Segoe UI for Windows Vista authenticity */
+html {
+  --mat-sys-body-large: 400 1rem / 1.4rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-large-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-large-line-height: 1.4rem;
+  --mat-sys-body-large-size: 1rem;
+  --mat-sys-body-large-tracking: 0.015rem;
+  --mat-sys-body-large-weight: 400;
+  
+  --mat-sys-body-medium: 400 0.875rem / 1.25rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-medium-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-medium-line-height: 1.25rem;
+  --mat-sys-body-medium-size: 0.875rem;
+  --mat-sys-body-medium-tracking: 0.01rem;
+  --mat-sys-body-medium-weight: 400;
+  
+  --mat-sys-body-small: 400 0.75rem / 1rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-small-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-body-small-line-height: 1rem;
+  --mat-sys-body-small-size: 0.75rem;
+  --mat-sys-body-small-tracking: 0.02rem;
+  --mat-sys-body-small-weight: 400;
+
+  --mat-sys-display-large: 400 3.562rem / 4rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-large-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-large-line-height: 4rem;
+  --mat-sys-display-large-size: 3.562rem;
+  --mat-sys-display-large-tracking: -0.025rem;
+  --mat-sys-display-large-weight: 400;
+  
+  --mat-sys-display-medium: 400 2.812rem / 3.25rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-medium-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-medium-line-height: 3.25rem;
+  --mat-sys-display-medium-size: 2.812rem;
+  --mat-sys-display-medium-tracking: -0.015rem;
+  --mat-sys-display-medium-weight: 400;
+  
+  --mat-sys-display-small: 400 2.25rem / 2.75rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-small-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-display-small-line-height: 2.75rem;
+  --mat-sys-display-small-size: 2.25rem;
+  --mat-sys-display-small-tracking: -0.01rem;
+  --mat-sys-display-small-weight: 400;
+
+  --mat-sys-headline-large: 400 2rem / 2.5rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-large-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-large-line-height: 2.5rem;
+  --mat-sys-headline-large-size: 2rem;
+  --mat-sys-headline-large-tracking: -0.005rem;
+  --mat-sys-headline-large-weight: 400;
+  
+  --mat-sys-headline-medium: 400 1.75rem / 2.25rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-medium-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-medium-line-height: 2.25rem;
+  --mat-sys-headline-medium-size: 1.75rem;
+  --mat-sys-headline-medium-tracking: 0;
+  --mat-sys-headline-medium-weight: 400;
+  
+  --mat-sys-headline-small: 400 1.5rem / 2rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-small-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-headline-small-line-height: 2rem;
+  --mat-sys-headline-small-size: 1.5rem;
+  --mat-sys-headline-small-tracking: 0;
+  --mat-sys-headline-small-weight: 400;
+
+  --mat-sys-label-large: 400 0.875rem / 1.25rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-large-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-large-line-height: 1.25rem;
+  --mat-sys-label-large-size: 0.875rem;
+  --mat-sys-label-large-tracking: 0.01rem;
+  --mat-sys-label-large-weight: 400;
+  --mat-sys-label-large-weight-prominent: 600;
+  
+  --mat-sys-label-medium: 400 0.75rem / 1rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-medium-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-medium-line-height: 1rem;
+  --mat-sys-label-medium-size: 0.75rem;
+  --mat-sys-label-medium-tracking: 0.02rem;
+  --mat-sys-label-medium-weight: 400;
+  --mat-sys-label-medium-weight-prominent: 600;
+  
+  --mat-sys-label-small: 400 0.688rem / 1rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-small-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-label-small-line-height: 1rem;
+  --mat-sys-label-small-size: 0.688rem;
+  --mat-sys-label-small-tracking: 0.025rem;
+  --mat-sys-label-small-weight: 400;
+
+  --mat-sys-title-large: 400 1.375rem / 1.75rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-large-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-large-line-height: 1.75rem;
+  --mat-sys-title-large-size: 1.375rem;
+  --mat-sys-title-large-tracking: 0;
+  --mat-sys-title-large-weight: 400;
+  
+  --mat-sys-title-medium: 400 1rem / 1.5rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-medium-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-medium-line-height: 1.5rem;
+  --mat-sys-title-medium-size: 1rem;
+  --mat-sys-title-medium-tracking: 0.005rem;
+  --mat-sys-title-medium-weight: 400;
+  
+  --mat-sys-title-small: 400 0.875rem / 1.25rem 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-small-font: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --mat-sys-title-small-line-height: 1.25rem;
+  --mat-sys-title-small-size: 0.875rem;
+  --mat-sys-title-small-tracking: 0.01rem;
+  --mat-sys-title-small-weight: 400;
+}
+
+/* Corner Radius - Windows Vista rounded corners (more pronounced) */
+html {
+  --mat-sys-corner-extra-large: 12px;
+  --mat-sys-corner-extra-large-top: 12px 12px 0 0;
+  --mat-sys-corner-extra-small: 3px;
+  --mat-sys-corner-extra-small-top: 3px 3px 0 0;
+  --mat-sys-corner-full: 9999px;
+  --mat-sys-corner-large: 8px;
+  --mat-sys-corner-large-end: 0 8px 8px 0;
+  --mat-sys-corner-large-start: 8px 0 0 8px;
+  --mat-sys-corner-large-top: 8px 8px 0 0;
+  --mat-sys-corner-medium: 6px;
+  --mat-sys-corner-none: 0;
+  --mat-sys-corner-small: 4px;
+}
+
+/* State Layer Opacity - Vista style interactions */
+html {
+  --mat-sys-dragged-state-layer-opacity: 0.20;
+  --mat-sys-focus-state-layer-opacity: 0.15;
+  --mat-sys-hover-state-layer-opacity: 0.10;
+  --mat-sys-pressed-state-layer-opacity: 0.15;
+}
+
+/* Windows Vista Aero Glass Effects */
+body {
+  background: linear-gradient(135deg, #b8d4f0 0%, #e8f4fd 50%, #f8fcff 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Aero Glass effect for Material components */
+.mat-card,
+.mat-dialog-container,
+.mat-drawer,
+.mat-sidenav,
+.mat-toolbar {
+  background: var(--vista-glass-white) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--vista-border-shine);
+  box-shadow: var(--mat-sys-level2);
+}
+
+.mat-elevation-z1 {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.mat-elevation-z2,
+.mat-elevation-z3,
+.mat-elevation-z4 {
+  background: var(--vista-glass-white);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid var(--vista-border-shine);
+}
+
+.mat-elevation-z5,
+.mat-elevation-z6 {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid var(--vista-border-shine);
+}
+
+/* Button styles with Vista Aero look */
+.mat-raised-button,
+.mat-fab,
+.mat-mini-fab {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.5) 100%) !important;
+  border: 1px solid var(--vista-border-shine);
+  box-shadow: var(--mat-sys-level2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.mat-raised-button:hover,
+.mat-fab:hover,
+.mat-mini-fab:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.65) 100%) !important;
+  box-shadow: var(--mat-sys-level3);
+}
+
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background: linear-gradient(180deg, rgba(49,106,197,0.9) 0%, rgba(49,106,197,0.8) 50%, rgba(49,106,197,0.7) 100%) !important;
+  color: white !important;
+}
+
+/* Input fields with Vista glass effect */
+.mat-form-field-appearance-outline .mat-form-field-outline,
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--vista-border-shine);
+}
+
+/* Menu and select panels */
+.mat-menu-panel,
+.mat-select-panel {
+  background: var(--vista-glass-white) !important;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid var(--vista-border-shine);
+  box-shadow: var(--mat-sys-level4);
+}
+
+/* Progress bars with Vista blue glow */
+.mat-progress-bar-fill::after {
+  background: linear-gradient(90deg, var(--mat-sys-primary) 0%, #60a8ff 100%);
+  box-shadow: 0 0 10px rgba(49, 106, 197, 0.5);
+}
+
+/* Slider with Vista styling */
+.mat-slider-thumb {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(49,106,197,1) 100%);
+  border: 2px solid var(--vista-border-shine);
+  box-shadow: 0 2px 8px rgba(49, 106, 197, 0.3);
+}
+
+/* Tabs with Vista glass effect */
+.mat-tab-group,
+.mat-tab-nav-bar {
+  background: var(--vista-glass-white);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.mat-tab-label {
+  color: var(--mat-sys-on-surface);
+  font-weight: 400;
+}
+
+.mat-tab-label.mat-tab-label-active {
+  color: var(--mat-sys-primary);
+  font-weight: 500;
+}
+
+/* Scrollbar styling for Vista theme */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(49,106,197,0.8) 0%, rgba(49,106,197,0.6) 100%);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(49,106,197,0.9) 0%, rgba(49,106,197,0.7) 100%);
+}
+
+/* Special Vista title bar effect for app bars */
+.mat-toolbar.mat-primary {
+  background: linear-gradient(180deg, rgba(49,106,197,0.9) 0%, rgba(49,106,197,0.8) 50%, rgba(49,106,197,0.7) 100%) !important;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-bottom: 1px solid var(--vista-border-shine);
+  box-shadow: var(--mat-sys-level3);
+}
+
+/* Ripple effects with Vista blue glow */
+.mat-ripple-element {
+  background-color: rgba(49, 106, 197, 0.2) !important;
+}
+
+/* Selection colors */
+::selection {
+  background: rgba(49, 106, 197, 0.3);
+  color: var(--mat-sys-on-primary-container);
+}
+
+/* Focus indicators with Vista blue glow */
+.mat-focused .mat-form-field-outline-thick {
+  color: var(--mat-sys-primary);
+  box-shadow: 0 0 8px rgba(49, 106, 197, 0.4);
+}

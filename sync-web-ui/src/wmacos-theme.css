@@ -1,0 +1,455 @@
+/* Windows 11 Theme CSS for Angular Material 17 */
+
+/* ===== VARIABLES DE WINDOWS 11 ===== */
+:root {
+  /* Colores principales de Windows 11 */
+  --win11-blue: #0078d4;
+  --win11-blue-hover: #106ebe;
+  --win11-blue-active: #005a9e;
+  --win11-blue-light: #deecf9;
+  --win11-blue-lighter: #f3f9fd;
+  
+  /* Grises del sistema Windows 11 */
+  --win11-gray-50: #fafafa;
+  --win11-gray-100: #f5f5f5;
+  --win11-gray-200: #e5e5e5;
+  --win11-gray-300: #d4d4d4;
+  --win11-gray-400: #a3a3a3;
+  --win11-gray-500: #737373;
+  --win11-gray-600: #525252;
+  --win11-gray-700: #404040;
+  --win11-gray-800: #262626;
+  --win11-gray-900: #171717;
+  
+  /* Colores de acento Windows 11 */
+  --win11-accent: #0078d4;
+  --win11-accent-light: #40e0d0;
+  --win11-accent-dark: #005a9e;
+  
+  /* Colores de superficie */
+  --win11-surface: #ffffff;
+  --win11-surface-variant: #f8f9fa;
+  --win11-surface-container: #f3f4f6;
+  --win11-surface-dim: #f1f3f4;
+  
+  /* Texto */
+  --win11-text-primary: #202124;
+  --win11-text-secondary: #5f6368;
+  --win11-text-disabled: #9aa0a6;
+  --win11-text-on-accent: #ffffff;
+  
+  /* Sombras Windows 11 - Más suaves y difusas */
+  --win11-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+  --win11-shadow-2: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --win11-shadow-3: 0 10px 15px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --win11-shadow-4: 0 25px 50px rgba(0, 0, 0, 0.15);
+  
+  /* Border radius Windows 11 */
+  --win11-radius-small: 4px;
+  --win11-radius-medium: 8px;
+  --win11-radius-large: 12px;
+  --win11-radius-xlarge: 16px;
+  
+  /* Transiciones */
+  --win11-transition: all 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
+  --win11-transition-slow: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  
+  /* Blur effect */
+  --win11-backdrop-blur: blur(20px);
+}
+
+/* ===== MATERIAL DESIGN OVERRIDES ===== */
+
+/* Material Theme Variables Override */
+.mat-app-background {
+  background-color: var(--win11-gray-50) !important;
+}
+
+/* ===== TOOLBAR ANGULAR MATERIAL ===== */
+.mat-toolbar,
+.mat-mdc-toolbar {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: var(--win11-backdrop-blur);
+  -webkit-backdrop-filter: var(--win11-backdrop-blur);
+  color: var(--win11-text-primary) !important;
+  box-shadow: var(--win11-shadow-2);
+  border-bottom: 1px solid var(--win11-gray-200);
+  border-radius: 0;
+  padding: 0 24px;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.mat-toolbar-row,
+.mat-mdc-toolbar-row {
+  height: 56px;
+  align-items: center;
+}
+
+/* Toolbar brand/title */
+.mat-toolbar .toolbar-title {
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--win11-text-primary);
+  margin-right: 32px;
+}
+
+/* Toolbar buttons */
+.mat-mdc-button,
+.mat-mdc-outlined-button,
+.mat-mdc-raised-button {
+  border-radius: var(--win11-radius-small) !important;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  transition: var(--win11-transition) !important;
+}
+
+.mat-mdc-button {
+  color: var(--win11-text-primary) !important;
+}
+
+.mat-mdc-button:hover {
+  background-color: var(--win11-gray-100) !important;
+}
+
+.mat-mdc-raised-button {
+  background-color: var(--win11-accent) !important;
+  color: var(--win11-text-on-accent) !important;
+  box-shadow: var(--win11-shadow-1) !important;
+}
+
+.mat-mdc-raised-button:hover {
+  background-color: var(--win11-blue-hover) !important;
+  box-shadow: var(--win11-shadow-2) !important;
+  transform: translateY(-1px);
+}
+
+/* ===== SIDENAV ANGULAR MATERIAL ===== */
+.mat-drawer-container,
+.mat-sidenav-container {
+  background-color: var(--win11-gray-50) !important;
+}
+
+.mat-drawer,
+.mat-sidenav {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: var(--win11-backdrop-blur);
+  -webkit-backdrop-filter: var(--win11-backdrop-blur);
+  border-right: 1px solid var(--win11-gray-200) !important;
+  box-shadow: var(--win11-shadow-3);
+  width: 280px !important;
+  padding: 16px 0;
+  top: 56px !important;
+  height: calc(100vh - 56px) !important;
+}
+
+/* Sidenav header */
+.sidenav-header {
+  padding: 16px 24px 24px;
+  border-bottom: 1px solid var(--win11-gray-200);
+  margin-bottom: 16px;
+}
+
+.sidenav-header h3 {
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--win11-text-primary);
+  margin: 0 0 4px 0;
+}
+
+.sidenav-header p {
+  font-size: 14px;
+  color: var(--win11-text-secondary);
+  margin: 0;
+}
+
+/* Navigation lists */
+.mat-nav-list,
+.mat-mdc-nav-list {
+  padding: 0 !important;
+}
+
+.mat-list-item,
+.mat-mdc-list-item {
+  height: 48px !important;
+  margin: 0 8px 4px 8px !important;
+  border-radius: var(--win11-radius-medium) !important;
+  transition: var(--win11-transition) !important;
+}
+
+.mat-list-item:hover,
+.mat-mdc-list-item:hover {
+  background-color: var(--win11-gray-100) !important;
+}
+
+.mat-list-item.active,
+.mat-mdc-list-item.active {
+  background-color: var(--win11-blue-light) !important;
+  color: var(--win11-accent) !important;
+}
+
+.mat-list-item-content,
+.mat-mdc-list-item-content {
+  padding: 0 16px !important;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* List icons */
+.mat-list-item .mat-icon,
+.mat-mdc-list-item .mat-icon {
+  color: var(--win11-text-secondary) !important;
+  margin-right: 16px !important;
+}
+
+.mat-list-item.active .mat-icon,
+.mat-mdc-list-item.active .mat-icon {
+  color: var(--win11-accent) !important;
+}
+
+/* Section headers */
+.nav-section-header {
+  padding: 24px 24px 8px;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--win11-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== MENU ANGULAR MATERIAL ===== */
+.mat-mdc-menu-panel {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: var(--win11-backdrop-blur);
+  -webkit-backdrop-filter: var(--win11-backdrop-blur);
+  border: 1px solid var(--win11-gray-200) !important;
+  border-radius: var(--win11-radius-large) !important;
+  box-shadow: var(--win11-shadow-4) !important;
+  padding: 8px !important;
+  margin-top: 8px !important;
+}
+
+.mat-mdc-menu-item {
+  height: 40px !important;
+  border-radius: var(--win11-radius-small) !important;
+  margin: 2px 0 !important;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+  color: var(--win11-text-primary) !important;
+  transition: var(--win11-transition) !important;
+}
+
+.mat-mdc-menu-item:hover {
+  background-color: var(--win11-gray-100) !important;
+}
+
+.mat-mdc-menu-item.active {
+  background-color: var(--win11-blue-light) !important;
+  color: var(--win11-accent) !important;
+}
+
+.mat-mdc-menu-item .mat-icon {
+  color: var(--win11-text-secondary) !important;
+  margin-right: 12px !important;
+}
+
+.mat-mdc-menu-item:hover .mat-icon,
+.mat-mdc-menu-item.active .mat-icon {
+  color: var(--win11-accent) !important;
+}
+
+/* Menu divider */
+.mat-mdc-menu-item.divider {
+  height: 1px !important;
+  background-color: var(--win11-gray-200) !important;
+  margin: 8px 0 !important;
+  padding: 0 !important;
+}
+
+/* ===== CARDS Y CONTENIDO ===== */
+.mat-mdc-card {
+  background-color: var(--win11-surface) !important;
+  border: 1px solid var(--win11-gray-200) !important;
+  border-radius: var(--win11-radius-large) !important;
+  box-shadow: var(--win11-shadow-1) !important;
+  transition: var(--win11-transition-slow) !important;
+}
+
+.mat-mdc-card:hover {
+  box-shadow: var(--win11-shadow-2) !important;
+  transform: translateY(-2px);
+}
+
+/* ===== FORM CONTROLS ===== */
+.mat-mdc-form-field {
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+}
+
+.mat-mdc-text-field-wrapper {
+  border-radius: var(--win11-radius-small) !important;
+  background-color: var(--win11-surface) !important;
+  border: 1px solid var(--win11-gray-300) !important;
+}
+
+.mat-mdc-text-field-wrapper:hover {
+  border-color: var(--win11-gray-400) !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--focused {
+  border-color: var(--win11-accent) !important;
+  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2) !important;
+}
+
+/* ===== BUTTONS ADICIONALES ===== */
+.mat-mdc-fab {
+  background-color: var(--win11-accent) !important;
+  color: var(--win11-text-on-accent) !important;
+  box-shadow: var(--win11-shadow-2) !important;
+}
+
+.mat-mdc-fab:hover {
+  background-color: var(--win11-blue-hover) !important;
+  box-shadow: var(--win11-shadow-3) !important;
+  transform: translateY(-2px);
+}
+
+/* ===== TABS ===== */
+.mat-mdc-tab-group {
+  background-color: transparent !important;
+}
+
+.mat-mdc-tab {
+  color: var(--win11-text-secondary) !important;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.mat-mdc-tab.mdc-tab--active {
+  color: var(--win11-accent) !important;
+}
+
+.mat-mdc-tab-header {
+  border-bottom: 1px solid var(--win11-gray-200) !important;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content {
+  margin-left: 280px;
+  margin-top: 56px;
+  padding: 24px;
+  min-height: calc(100vh - 56px);
+  background-color: var(--win11-gray-50);
+}
+
+/* ===== UTILIDADES WINDOWS 11 ===== */
+.win11-glass {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: var(--win11-backdrop-blur);
+  -webkit-backdrop-filter: var(--win11-backdrop-blur);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.win11-surface {
+  background-color: var(--win11-surface);
+  border: 1px solid var(--win11-gray-200);
+  border-radius: var(--win11-radius-medium);
+  box-shadow: var(--win11-shadow-1);
+}
+
+.win11-accent-btn {
+  background-color: var(--win11-accent) !important;
+  color: var(--win11-text-on-accent) !important;
+  border: none !important;
+  border-radius: var(--win11-radius-small) !important;
+  font-weight: 500 !important;
+  transition: var(--win11-transition) !important;
+}
+
+.win11-accent-btn:hover {
+  background-color: var(--win11-blue-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--win11-shadow-2) !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .mat-drawer,
+  .mat-sidenav {
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  .mat-drawer.mat-drawer-opened,
+  .mat-sidenav.mat-sidenav-opened {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .mat-toolbar,
+  .mat-mdc-toolbar {
+    padding: 0 16px;
+  }
+}
+
+/* ===== SCROLLBAR WINDOWS 11 STYLE ===== */
+.mat-drawer::-webkit-scrollbar,
+.mat-sidenav::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mat-drawer::-webkit-scrollbar-track,
+.mat-sidenav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mat-drawer::-webkit-scrollbar-thumb,
+.mat-sidenav::-webkit-scrollbar-thumb {
+  background: var(--win11-gray-300);
+  border-radius: 4px;
+}
+
+.mat-drawer::-webkit-scrollbar-thumb:hover,
+.mat-sidenav::-webkit-scrollbar-thumb:hover {
+  background: var(--win11-gray-400);
+}
+
+/* ===== TYPOGRAPHY WINDOWS 11 ===== */
+body, .mat-typography {
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.mat-h1, .mat-headline-1,
+.mat-h2, .mat-headline-2,
+.mat-h3, .mat-headline-3,
+.mat-h4, .mat-headline-4 {
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--win11-text-primary) !important;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes win11-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.win11-fade-in {
+  animation: win11-fade-in 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}

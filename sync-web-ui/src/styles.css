@@ -6,7 +6,11 @@
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 @import '@angular/material/prebuilt-themes/purple-green.css';
 @import '@angular/material/prebuilt-themes/rose-red.css';
-*/
 @import './windows11-theme.css';
+@import './windows-vista-theme.css';
+@import './windows-xp-theme.css';
+@import './wmacos-theme.css';
+*/
+@import './wmacos-theme.css';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

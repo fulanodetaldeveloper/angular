@@ -1,23 +1,15 @@
-<mat-toolbar color="primary">
-    <button mat-icon-button>
+<mat-toolbar>
+    <button mat-icon-button (click)="toggleSidebar()" >
         <mat-icon>menu</mat-icon>
     </button>
 
-    <span class="app-title">Mi Aplicación</span>
+    <span class="app-title"> Synchronizer</span>
 
     <span class="spacer"></span>
 
-
-    <button mat-button routerLink="/login">
-        <mat-icon>login</mat-icon>
-        Acceso
+    <button mat-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        Cerrar Sesión
     </button>
 
-
-    <ng-template #loggedInButtons>
-        <button mat-button>
-            <mat-icon>logout</mat-icon>
-            Cerrar Sesión
-        </button>
-    </ng-template>
 </mat-toolbar>
